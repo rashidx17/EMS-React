@@ -4,8 +4,8 @@ const Login = ({handleLogin}) => {
 
     
 
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('admin@me.com')
+    const [password, setPassword] = useState('123')
 
 
     const submitHandler = (e)=>{
@@ -18,7 +18,9 @@ const Login = ({handleLogin}) => {
 
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
+
         <div className='border-2 rounded-xl border-emerald-600 p-20'>
+            
             <form 
             onSubmit={(e)=>{
                 submitHandler(e)
